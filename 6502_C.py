@@ -94,7 +94,7 @@ for Line in program[:] :
         
     elif LineDecoder[0] == ".ver" :
         ProgramVer = int(LineDecoder[1], 16)
-        if ProgramVer > 2 : raise CompilerError("This Version Of 6502 ASM Is NES_6502 ASM. Please Downgrade Your Code.")
+        if ProgramVer > 2 : raise CompilerError("This Version Of 6502 ASM Is GBP_6502 ASM. Please Downgrade Your Code.")
         else : program.pop(program.index(Line))
 
     else :
